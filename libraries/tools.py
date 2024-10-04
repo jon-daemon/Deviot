@@ -94,7 +94,7 @@ def create_command(command):
         return command
 
     if(platform() == 'osx'):
-        exe = 'python' if(not bool(symlink)) else 'python2'
+        exe = 'python' if(not bool(symlink)) else 'python3'
         options = ['-m', command[0]]
     else:
         exe = command[0]
